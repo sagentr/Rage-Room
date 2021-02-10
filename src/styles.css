@@ -1,0 +1,18 @@
+body {   background-color: black; }
+
+
+header {
+    font-family: 'B612 Mono';font-size: 22px;
+    text-align: center;
+    color: white;
+}
+
+div {
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
