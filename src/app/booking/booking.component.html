@@ -42,7 +42,7 @@ Book Your Experience Here
                         >
                         <option
                         *ngFor="let package of packages"
-                        [value]="package">{{ package }}
+                        [value]="package">{{ package | titlecase }}
                         </option>
                         </select>
                     </div>
@@ -97,6 +97,7 @@ Book Your Experience Here
                         <span class="help-block" *ngIf="!email.valid && email.touched"> Please enter a valid email!</span>
                     </div>
                     <p *ngIf="!onSubmit.valid && onSubmit.touched">The form is incomplete!</p>
+                    <p *ngIf="onSubmit.valid && onSubmit.touched">{{ bookingDetails | titleCase }}</p>
                     <br>
                     <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Submit</button>
              
