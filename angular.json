@@ -31,7 +31,6 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
-              
             ],
             "scripts": []
           },
@@ -131,5 +130,10 @@
   "defaultProject": "SmashRageRoom",
   "cli": {
     "analytics": "357eaff2-58e6-4c86-9ce1-e5a0cb4024ad"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
   }
 }
