@@ -22,8 +22,8 @@ export class BookingComponent {
  
   onSubmit(form: NgForm) {
     console.log(form)
-    return this.bookingDetails;
+    
   }
 
- bookingDetails = "Your reservation has been recorded!";
+
 }

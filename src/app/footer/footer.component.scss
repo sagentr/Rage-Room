@@ -5,20 +5,21 @@
 // }
 
 $font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$primary-color: rgb(58, 54, 54);
 
-footer {
+.footer {
     font: 100% $font-stack;
-    color: $primary-color;
-  }
+    // color: 
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    background-color: $primary-color; 
+    font-family: sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 
-// .footer
-//     justify-content: space-around
-//     align-items: center
-//     min-height: 5vh
-//     background-color: grey
-//     font-family: 'Montserrat', sans-serif
-//     position: fixed
-//     bottom: 0
-//     width: 100vw
+}
 
+
+   
