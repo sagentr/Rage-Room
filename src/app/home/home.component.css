@@ -6,6 +6,7 @@
    }
 .row-text {
     opacity: 1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 
@@ -22,14 +23,3 @@ div {
     padding-bottom: 20px;
     padding-left: 0px;
   }
-
-  /* .bg {
-    /* The image used */
-    /* background-image: url("assets/images/home-page-img.jpg");
-   
-    height: 50%;
-   
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */ 

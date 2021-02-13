@@ -1,152 +1,86 @@
 <mat-accordion>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        This is the expansion title
-      </mat-panel-title>
-      <mat-panel-description>
-        This is a summary of the content
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <p>This is the primary content of the panel.</p>
-  </mat-expansion-panel>
-  <!-- 1 -->
+
   <mat-expansion-panel (opened)="panelOpenState = true"
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Self aware panel
+        Is this a safe activity?
       </mat-panel-title>
       <mat-panel-description>
-         {{panelOpenState ? '+' : ''}}
+         {{panelOpenState ? '' : ''}}
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <p>I'm visible because I am open</p>
+    <p>The Rage Room puts safety ahead of everything else. We suit up Ragers with heavy-duty coveralls, face masks, and optional hard hats. 
+
+      Covid 19 Response: We have put speacial measures in place to keep all juests safe both during and after your activity.
+      If you are experiening and "flu-like" symptoms please contact us to reschedule.
+      - Wellness Checks - Employees receive daily wellness checks to ensure they are healthy and symptom-free. If you or anyone in your group is experiencing symptoms, we will work directly with you to cancel or reschedule your session.
+      - Stringent Cleaning - We've increased the frequency of disinfecting surfaces and high traffic areas between each session, and hand sanitizer will be available to all of our guestsSocial distancing - Guests will stay at a safe 6 foot distance during your session. We also ensure that all staff members will be wearing the necessary PPE</p>
   </mat-expansion-panel>
-<!-- 1B -->
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        This is the expansion title
-      </mat-panel-title>
-      <mat-panel-description>
-        This is a summary of the content
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <p>This is the primary content of the panel.</p>
-  </mat-expansion-panel>
-  <!-- 2 -->
+
   <mat-expansion-panel (opened)="panelOpenState = true"
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Self aware panel
+        What am I breaking?
       </mat-panel-title>
       <mat-panel-description>
-         {{panelOpenState ? '+' : ''}}
+         {{panelOpenState ? '' : ''}}
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <p>I'm visible because I am open</p>
+    <p>We offer a variety of items. Small items include: plates, tea cups, shot glasses, small electronics, CD's, and more. Medium itesm: plates, wine glasses, vases, vinyl's, lunchboxes, woodwork, tumblers, etc. Large items: mirros, chairs, woodwork, tv's, computers, windshields, etc. We also offer "Specialty items" that can be purchased on location.We don't always have everything due to the difficult nature of acquiring some items, but they can include: machinery, vehicles, large furniture, etc.</p>
   </mat-expansion-panel>
-  <!-- 2B -->
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        This is the expansion title
-      </mat-panel-title>
-      <mat-panel-description>
-        This is a summary of the content
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <p>This is the primary content of the panel.</p>
-  </mat-expansion-panel>
-  <!-- 3 -->
+
   <mat-expansion-panel (opened)="panelOpenState = true"
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Self aware panel
+        What do I need to bring? 
       </mat-panel-title>
       <mat-panel-description>
-         {{panelOpenState ? '+' : ''}}
+         {{panelOpenState ? '' : ''}}
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <p>I'm visible because I am open</p>
+    <p>All you need is closed-toed shoes and a form of identification for reservation. You may also bring up to 5 personal items per person to break inside the Rage Rooms.</p>
   </mat-expansion-panel>
-  <!-- 3B -->
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        This is the expansion title
-      </mat-panel-title>
-      <mat-panel-description>
-        This is a summary of the content
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <p>This is the primary content of the panel.</p>
-  </mat-expansion-panel>
-  <!-- 4 -->
+
   <mat-expansion-panel (opened)="panelOpenState = true"
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Self aware panel
+        How many people in a room?
       </mat-panel-title>
       <mat-panel-description>
-         {{panelOpenState ? '+' : ''}}
+         {{panelOpenState ? '' : ''}}
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <p>I'm visible because I am open</p>
+    <p>4 people can be in one room at a time, but all five of our rooms open up to accommodate parties up to 20 people.</p>
   </mat-expansion-panel>
-  <!-- 4B -->
-  <mat-expansion-panel hideToggle>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        This is the expansion title
-      </mat-panel-title>
-      <mat-panel-description>
-        This is a summary of the content
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <p>This is the primary content of the panel.</p>
-  </mat-expansion-panel>
-  <!-- 5 -->
+
   <mat-expansion-panel (opened)="panelOpenState = true"
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Self aware panel
+        How old do we have to be to participate?
       </mat-panel-title>
       <mat-panel-description>
-         {{panelOpenState ? 'Open' : 'Closed'}}
+         {{panelOpenState ? '' : ''}}
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <p>I'm visible because I am open</p>
+    <p>Every Rager needs to be 18 and over to participate. 14+ with parental consent.</p>
   </mat-expansion-panel>
-  <!-- 5B -->
-  <mat-expansion-panel hideToggle>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        This is the expansion title
-      </mat-panel-title>
-      <mat-panel-description>
-        This is a summary of the content
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <p>This is the primary content of the panel.</p>
-  </mat-expansion-panel>
-  <!-- 6 -->
+ 
   <mat-expansion-panel (opened)="panelOpenState = true"
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Self aware panel
+        We just finished raging and we are famished! What should we do now?
       </mat-panel-title>
       <mat-panel-description>
-         {{panelOpenState ? '+' : ''}}
+         {{panelOpenState ? '' : ''}}
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <p>I'm visible because I am open</p>
+    <p>Great question! You have probably worked up quite the appetite. So, Refuel, of course! Our favorite local restaurant is <link>, but use the tool below to find out all about the excellent food this part of St. Louis has to offer.</p>
   </mat-expansion-panel>
 
 
@@ -154,41 +88,3 @@
 </mat-accordion>
 
 
-
-
-<!-- 
-
-    Q1:Is this a safe activity?
-
-    A1: The Rage Room puts safety ahead of everything else. We suit up Ragers with heavy-duty coveralls, face masks, and optional hard hats. 
-
-          Covid 19 Response: We have put speacial measures in place to keep all juests safe both during and after your activity.
-          If you are experiening and "flu-like" symptoms please contact us to reschedule. 
-            -Wellness Checks - Employees receive daily wellness checks to ensure they are healthy and symptom-free. If you or anyone in your group is experiencing symptoms, we will work directly with you to cancel or reschedule your session.</div>
-            Stringent Cleaning - We've increased the frequency of disinfecting surfaces and high traffic areas between each session, and hand sanitizer will be available to all of our guests
-            Social distancing - Guests will stay at a safe 6 foot distance during your session. We also ensure that all staff members will be wearing the necessary PPE
-          </div>
-      <div class="row">
-      <div class="col-md-4">Wellness Checks - Employees receive daily wellness checks to ensure they are healthy and symptom-free. If you or anyone in your group is experiencing symptoms, we will work directly with you to cancel or reschedule your session.</div>
-      <div class="col-md-4">Stringent Cleaning - We've increased the frequency of disinfecting surfaces and high traffic areas between each session, and hand sanitizer will be available to all of our guests.</div>
-      <div class="col-md-4">Social distancing - Guests will stay at a safe 6 foot distance during your session. We also ensure that all staff members will be wearing the necessary PPE.</div>
-      </div>
-      <div>
-
-  Q2: What am I breaking? 
-  A2: We offer a variety of items. Small items include: plates, tea cups, shot glasses, small electronics, CD's, and more. Medium itesm: plates, wine glasses, vases, vinyl's, lunchboxes, woodwork, tumblers, etc. Large items: mirros, chairs, woodwork, tv's, computers, windshields, etc. We also offer "Specialty items" that can be purchased on location. We don't always have everything due to the difficult nature of acquiring some items, but they can include: machinery, vehicles, large furniture, etc.
-
-  Q3: What do I need to bring? 
-  A3: All you need is closed-toed shoes and a form of identification for reservation.
-
-  Q4: How many people in a room?
-  A4: 4 people can be in one room at a time, but all five of our rooms o>pen up to accommodate partuis up to 20 people.
-
-  Q5: How old do we have to be to participate?
-  A5: Every Rager needs to be 18 and over to participate. 15+ with parental consent.
-
-  Q6: We just finished raging and we are famished! What should we do now?
-  A6: Great question! Refuel, of course! Our favorite local restaurant is <link>, but use the tool below to find out all about the excellent food this part of St. Louis has to offer.
-  <insert Zomato API></insert>
-
-/ -->

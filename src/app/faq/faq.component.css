@@ -1,3 +1,5 @@
 .mat-form-field + .mat-form-field {
     justify-content : normal, 10px;
+    color: black;
   }
+
