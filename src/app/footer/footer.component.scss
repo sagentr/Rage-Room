@@ -1,0 +1,24 @@
+// *{
+//     margin: 0px;
+//     padding: 0px;
+//     box-sizing: border-box;
+// }
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+footer {
+    font: 100% $font-stack;
+    color: $primary-color;
+  }
+
+// .footer
+//     justify-content: space-around
+//     align-items: center
+//     min-height: 5vh
+//     background-color: grey
+//     font-family: 'Montserrat', sans-serif
+//     position: fixed
+//     bottom: 0
+//     width: 100vw
+
