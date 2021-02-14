@@ -19,7 +19,8 @@ import { MatInputModule } from '@angular/material/input';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FormsModule } from '@angular/forms';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core'
+import { MatNativeDateModule } from '@angular/material/core';
+import { ApiComponent } from './faq/api/api.component'
 
 
 
@@ -38,6 +39,7 @@ import { MatNativeDateModule } from '@angular/material/core'
     PackagesInfoComponent,
     FaqComponent,
     ContactUsComponent,
+    ApiComponent,
   ],
   imports: [
     BrowserModule,

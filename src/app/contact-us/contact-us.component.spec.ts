@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContactUsComponent } from './contact-us.component';
 
@@ -19,7 +19,10 @@ describe('ContactUsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it('should render title in h1 tag', () => {
+      let fixture = TestBed.createComponent(ContactUsComponent);
+      fixture.detectChanges();
+      let compiled = fixture.debugElement.nativeElement;
+      expect(compiled.querySelector('h1').textContent).toContain('Contact Us');
+    });
 });
