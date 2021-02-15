@@ -1,158 +1,120 @@
-<br>
+<br />
 Book Your Experience Here
 <div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-            
-         <form (ngSubmit)="onSubmit(f)" #f="ngForm">   
-
-            <div 
-                id="user-data"
-                ngModelGroup="userData"
-                #userData="userData">
-
-                <div class="form-group">
-                    <label for="username">Head of Party Name</label>
-                    <input
-                    type="text"
-                    id="username"
-                    class="form-control"
-                    ngModel
-                    name="username"
-                    [value]="username">{{ username | titlecase }}>
-                    <!-- required> -->
-                </div>
-
-                <div class="form-group">
-                    <label for="Phone">Phone Number</label>
-                    <input
-                    type="text"
-                    id="Phone"
-                    class="form-control"
-                    ngModel
-                    name="Phone"
-                    required>
-                    <!-- <span class="help-block" *ngIf="Phone.length===9">Please enter a valid phone number!</span> -->
-                </div>
-
-                <div class="form-group">
-                    <label for="email">E-Mail Address</label>
-                    <input type="email"
-                    id="email"
-                    ngModel
-                    name="email"
-                    required
-                    email
-                    class="form-control"
-                    #email="ngModel">
-                    <span class="help-block" *ngIf="!email.valid && email.touched"> Please enter a valid email!</span>
-                </div>
-            </div>    
-
-                 <div class="form-group">
-                    <mat-form-field appearance="fill" class="dateClass">
-                        <mat-label>Choose a Date</mat-label>
-                        <input matInput [matDatepicker]="picker">
-                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                        <mat-datepicker #picker></mat-datepicker>
-                    </mat-form-field>
-                </div>
-
-                <div class="form-group">
-                    <label for="timeSlot">Choose a Time That Works For You</label>
-                    <select
-                        name="timeSlot"
-                        id="timeSlot"
-                        [ngModel]="selectedTimeSlot"
-                        class="form-control"
-                        required
-                        >
-                    <optionvalue='11:30'>11:30 AM</option>
-                    <optionvalue='12:00'>12:00 PM</option>
-                    <optionvalue='12:30'>12:30 PM</option>
-                    <optionvalue='1:00'>1:00 PM</option>
-                    <optionvalue='1:30'>1:30 PM</option>
-                    <optionvalue='2:00'>2:00 PM</option>
-                    <optionvalue='2:30'>2:30 PM</option>
-                    <optionvalue='3:00'>3:00 PM</option>
-                    <optionvalue='3:30'>3:30 PM</option>
-                    <optionvalue='4:00'>4:00 PM </option>
-                    <optionvalue='4:30'>4:30 PM </option>
-                    <optionvalue='5:30'>5:30 PM </option>
-                    <optionvalue='6:00'>6:00 PM </option>
-                    <optionvalue='6:30'>6:30 PM </option>
-                    <optionvalue='7:00'>7:00 PM </option>
-                    <optionvalue='7:30'>7:30 PM </option>
-                    <optionvalue='8:00'>8:00 PM </option>
-                    
-                        <!-- *ngFor="let timeSlot of timeSlots" -->
-                        <!-- [value]="timeSlot">{{ timeSlot }}> -->
-                    
-
-                        </select>
-                 </div>
-                <!-- Updated this -->
-                    <div class="form-group">
-                        <label for="package">Choose a Package</label>
-                        <select
-                            name="package"
-                            id="package"
-                            [ngModel]="selectedPackage"
-                            class="form-control"
-                            required>
-                        <option value='Standard Rage'>Standard Rage</option>
-                        <option value='Deluxe Rage'>Deluxe Rage</option>
-                        <option value='Paint Splatter'>Paint Splatter</option>
-
-                        <!-- Do I still include this?</option> -->
-                        <!-- <option *ngFor="let package of packages"></option> -->
-                        <!-- [value]="package">{{ package | titlecase }} -->
-                        </option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="participant">Number of Participants</label>
-                        <select
-                        name="participant"
-                        id="participant"
-                        [ngModel]="selectedParticipants"
-                        class="form-control"
-                        required
-                        >
-                        <option
-                        *ngFor="let participant of participants"
-                        [value]="participant">{{ participant }}
-                        </option>
-                        </select>
-                    </div>
-
-                  
-                    <p *ngIf="!onSubmit">The form is incomplete!</p>
-                  
-                    <br>
-                    <button class="btn btn-primary" 
-                    type="submit" 
-                    [disabled]="!f.valid">
-                    Submit</button>
-             
-                </div> 
-           </form> 
-        </div>  
-    </div>
-    <hr>
-    <div class="row" *ngIf="submitted">
-        <div class="col-xs-12">
-          <h3>Your Reservation has been confirmed: </h3>
-          <p>Username: {{ user.username | titlecase }}</p>
-          <p>E-Mail: {{ user.email }}</p>
-          <p>Package Selected: {{ user.package }}</p>
-          <!-- <p>Date: {{ user.dateInput }}</p> -->
-          <p>Time: {{ user.time }}</p>
-          <p>Number of Participants: {{ user.participants }}</p>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <form (ngSubmit)="onSubmit()" #f="ngForm">
+        <div id="user-data" ngModelGroup="userData" #userData="ngModelGroup">
+          <div class="form-group">
+            <mat-form-field appearance="fill" class="dateClass">
+              <mat-label for="date">Choose a Date</mat-label>
+              <input
+                matInput
+                [matDatepicker]="picker"
+                id="date"
+                class="form-control"
+                type="text"
+                ngModel
+                name="date"
+                required
+                #date="ngModel"
+              />
+              <mat-datepicker-toggle
+                matSuffix
+                [for]="picker"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <label for="time">Choose a Time Slot</label>
+            <select
+              id="time"
+              class="form-control"
+              [ngModel]="selectedTime"
+              name="time"
+            >
+              <option *ngFor="let time of times" [value]="time">
+                {{ time }}
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="package">Choose a Package</label>
+            <select
+              id="package"
+              class="form-control"
+              [ngModel]="selectedPackage"
+              name="package"
+            >
+              <option *ngFor="let package of packages" [value]="package">
+                {{ package | titlecase }}
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="participant">Number of Participants</label>
+            <select
+              id="participant"
+              class="form-control"
+              [ngModel]="selectedParticipants"
+              name="participant"
+            >
+              <option
+                *ngFor="let participant of participants"
+                [value]="participant"
+              >
+                {{ participant }}
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="username">Head of Party Name</label>
+            <input
+              class="form-control"
+              type="text"
+              id="username"
+              ngModel
+              name="username"
+              required
+              #username="ngModel"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              class="form-control"
+              type="text"
+              id="phone"
+              ngModel
+              name="phone"
+              required
+              #phone="ngModel"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail Address</label>
+            <input
+              class="form-control"
+              type="email"
+              id="email"
+              ngModel
+              name="email"
+              required
+              email
+              #email="ngModel"
+            />
+          </div>
+          <span class="help-block" *ngIf="!email.valid && email.touched">
+            Please enter a valid email!
+          </span>
+          <p *ngIf="!onSubmit">The form is incomplete!</p>
+          <br />
+          <button class="btn btn-primary" type="submit" [disabled]="!f.valid">
+            Submit
+          </button>
         </div>
-      </div>
+      </form>
+    </div>
+  </div>
 </div>
-
-
-
