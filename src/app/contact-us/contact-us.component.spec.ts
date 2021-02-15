@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContactUsComponent } from './contact-us.component';
 
@@ -19,6 +19,7 @@ describe('ContactUsComponent', () => {
     fixture.detectChanges();
   });
 
+  // custom test
   it('should render title in h1 tag', () => {
       let fixture = TestBed.createComponent(ContactUsComponent);
       fixture.detectChanges();
